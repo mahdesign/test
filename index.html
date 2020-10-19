@@ -3,18 +3,100 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>ahanOnline</title>
     <style>
-        h1 {
-            font-weight: 700;
-            font-size: 100px;
-        }
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.container img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    text-align: left;
+    color: white;
+   
+}
+
+.container:hover .text span {
+    right: -30%;
+    top: -70%;
+}
+
+.container:hover .text a {
+    display: inline;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+}
+
+.text span {
+    font-weight: 700;
+    font-size: 200px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    top: -30%;
+    right: -15%;
+    transition: all 0.5s;
+}
+
+.text h3 {
+    margin: 5px 0;
+}
+
+.text a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    margin-top: 10% !important;
+    position: absolute;
+    display: none;
+    transition: all 0.5s;
+}
+
+.text a:hover {
+    background-color: #fff;
+    color: #000;
+
+}
 
     </style>
 </head>
 
 <body>
-    <h1>Hello ahan online</h1>
+    <div class="container">
+        <img src="1.jpg" alt="">
+        <div class="text">
+            <span>01</span>
+            <h3>AhanOnline</h3>
+            <p>Lorem ipsum dolor sit amet <br>
+                consectetur adipisicing elit .Ea id <br>
+                facere ipsam recusandea unde <br>
+                assumenda ad atque nihil natus error, <br>
+                quis ducimus, officia pariatur porro, <br>
+                quod perspiciatis et quam eaque!
+            </p>
+            <a href="">Read more</a>
+        </div>
+        
+    </div>
 </body>
 
 </html>
